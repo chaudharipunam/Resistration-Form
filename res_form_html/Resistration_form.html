@@ -1,0 +1,347 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 30px;
+            background-color: #aaa8a8;
+        }
+
+        fieldset {
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        .c {
+            width: 100%;
+            height: 320px;
+            background-color: #d4d4ce;
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            padding: 0px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+
+        }
+
+        img {
+            max-width: 100%;
+            height: 320px;
+            width: 50%;
+            float: left;
+            border-top-left-radius: 15px;
+
+        }
+
+        .c h1 {
+            font-size: 29px;
+            color: #333;
+            position: absolute;
+            right: 45px;
+            top: 90px;
+        }
+
+        .c p {
+            font-size: 16px;
+            position: absolute;
+            bottom: 100px;
+            left: 330px;
+            color: #555;
+        }
+
+        label, select, input, textarea, pre {
+            font-size: 16px;
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            
+        }
+
+        pre {
+            font-size: 14px;
+            margin-top: 0;
+            cursor: default;
+        }
+
+        select {
+            width: calc(33.33% - 10px);
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .b .a {
+            font-size: 16px;
+            font-weight: lighter;
+            color: #555;
+        }
+
+        .d, .e {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .d #timePeriod{
+            width: 70px;
+        }
+
+        input[type='text'], input[type='submit'] {
+            width: calc(50% - 10px);
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        input[type='checkbox'] + label {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        input[type='submit'] {
+            background-color: #120347;
+            color: #fff;
+            cursor: pointer;
+            width: 150px;
+            height: 50px;
+        }
+
+        textarea{
+            height: 200px;
+            width: 580px;
+        }
+
+        input:focus{
+            border: 3px solid blue;
+        }
+
+        .r, .f, .g, .h {
+            display: flex;
+        }
+
+input:hover,
+textarea:hover,
+select:hover,
+input[type="checkbox"]:hover {
+  border: 1px solid #3366cc;
+  box-shadow: 0 0 5px rgba(7, 47, 129, 0.5); 
+}
+
+.t{
+    display: flex;
+    justify-content: center;
+}
+
+input[type='submit']:hover {
+    background-color:#2a1066;
+}
+
+
+#mon{
+    margin-left: 35px;
+}
+
+#tue{
+    margin-left: 200px;
+}
+
+#wed{
+    margin-left: 35px;
+}
+
+#thu{
+    margin-left: 172px;
+}
+
+#fri{
+    margin-left: 35px;
+}
+
+#sat{
+    margin-left: 212px;
+}
+
+#sun{
+    margin-left: 35px;
+}
+
+</style>
+</head>
+<body>
+    <form action="backend.php"> 
+        <fieldset>
+                
+            <div class="c">
+                <img src="res_pic.png" alt="Music School Logo" height="400px" width="400px">
+                <h1>MUSIC SCHOOL<br> REGISTRATION</h1>
+                <p>Register to our music school below</p>
+            </div>
+<br>
+            <label for="firstName">Name *</label>
+            <div class="d">
+                <input type="text" id="firstName" required> 
+                <input type="text" id="lastName" required>
+            </div>
+            <pre>First Name                          Last Name</pre><br>
+
+            <label for="birthMonth">Birth Date</label>
+            <div class="e">
+                <select id="birthMonth">
+                    <option>Please select a month</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                <select id="birthDay">
+                    <option>Please select a day</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+                <select id="birthYear">
+                    <option>Please select a year</option>
+                    <option>2024</option>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>2000</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                    <option>1992</option>
+                    <option>1991</option>
+                    <option>1990</option>
+                </select>
+            </div>
+            <pre>Month                   Day                     Year</pre><br>
+
+            <label for="instrument">Choice of Instrument *</label>
+            <select id="instrument" required>
+                <option disabled selected value="">Please Select</option>
+                <option>Violin</option>
+                <option>Guitar</option>
+                <option>Bass</option>
+                <option>Drums</option>
+                <option>Vocals</option>
+                </select>
+
+            <label class="b">Pick Days for Classes</label>
+            <div class="r">
+                <input type="checkbox" id="mon" value="mon"><label for="mon" class="a">Monday</label>
+                <input type="checkbox" id="tue" value="tue"><label for="tue" class="a">Tuesday</label>
+            </div>
+            <div class="f">
+                <input type="checkbox" id="wed" value="wed"><label for="wed" class="a">Wednesday</label>
+                <input type="checkbox" id="thu" value="thu"><label for="thu" class="a">Thursday</label>
+            </div>
+
+            <div class="g">
+                <input type="checkbox" id="fri" value="fri"><label for="fri" class="a">Friday</label>
+                <input type="checkbox" id="sat" value="sat"><label for="sat" class="a">Saturday</label>
+            </div>
+            <div class="h">
+                <input type="checkbox" id="sun" value="sun"><label for="sun" class="a">Sunday</label>
+            </div>
+<br>
+            <label for="startDate">Start Date & Time</label>
+            <div class="d">
+                <input type="date" id="startDate"> 
+                <input type="time" id="startTime">
+                <select id="timePeriod">
+                    <option>PM</option>
+                    <option>AM</option>
+                </select>
+            </div>
+            <pre>Date               Hour Minutes</pre><br>
+
+            <label for="comments">Comments</label>
+            <textarea id="comments"></textarea>
+<div class="t">
+            <input type="submit" value="Submit">
+</div>
+        </fieldset>
+    </form>
+</body>
+</html>
+ 
